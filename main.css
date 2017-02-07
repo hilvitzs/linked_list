@@ -62,20 +62,27 @@ body {
 
 .bookmark-button {
   display: inline-block;
-  width: 5px;
+  width: 50px;
   position: relative;
   float: left;
+  background-color: transparent;
+  border-bottom: 1px solid;r
+  border: 0 0 1 0;
+  padding: 5px;
+
 }
 
 .delete {
   float: right;
   position: ;
   bottom: 0px;
+  margin-right: 5px;
 }
 
 .read {
   float: left;
   bottom: 0px;
+  margin-left: 5px;
 }
 
 .title {
