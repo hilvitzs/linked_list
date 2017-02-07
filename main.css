@@ -14,28 +14,28 @@ body {
 
 .inputs {
   display: block;
-  width: 80%;
-  margin-top: 20px;
+  width: 90%;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-  border: 0px;
-  height: 20px;
+  height: 35px;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .logo {
-  max-width: 40px;
+  max-width: 100px;
 }
 
 .enter {
  background-color: #FFC107;
- margin-top: 20px;
- width: 80%;
+ margin-top: 40px;
+ width: 90%;
  border: 0px;
- height: 20px;
+ height: 35px;
  color: #FFFFFF;
  font-weight: 800;
+ font-size: 18px;
 
 
 }
@@ -62,8 +62,10 @@ body {
 
 .bookmark-button {
   display: inline-block;
+<<<<<<< HEAD
   width: 50px;
   position: relative;
+  width: 25px;
   float: left;
   background-color: transparent;
   border: 0px 0px 1px 0px;
@@ -108,9 +110,10 @@ body {
 
 h1 {
   color: #FFFFFF;
-  margin-top: 220px;
+  margin-top: 200px;
+  margin-bottom: 20px;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 80px;
 }
 
 h2 {
