@@ -2,9 +2,24 @@
 //The user should be able to input a title and URL into the appropriate fields
 
 
+var enterBtn = $('.enter');
+
+enterBtn.on('click', function(){
+  var $userInput = $('.website-title-inputs').val();
+  var $urlInput = $('.website-url-inputs').val();
+  $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
+'<h2>' + $userInput + '</h2>' +
+ '<h3>' + $urlInput + '</h3>' +
+ '<button class="read bookmark-button">Read</button >' +
+ '<button class="delete bookmark-button">Delete</button >' +
+'</section>');
+});
 
 //When the user clicks on the button for creating the bookmark, it should be added to the bookmarks section
-
+// function addBookmark () {
+// var userInput = document.querySelector('.website-title-inputs').value;
+// console.log(userInput);
+// }
 
 
 
