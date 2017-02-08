@@ -4,44 +4,30 @@ body {
   font-family: Open Sans;
 }
 
-.display {
-  background-color: #455A64;
-  width: 50%;
-  height: 720px;
-  text-align: center;
-
+h1 {
+  color: #FFFFFF;
+  margin-top: 200px;
+  margin-bottom: 20px;
+  font-weight: 800;
+  font-size: 80px;
 }
 
-.inputs {
-  display: block;
-  width: 90%;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  height: 35px;
+h2 {
+  font-weight: 800;
+  color: #455A64;
+  margin: 5px;
+  border-bottom: 1px solid #CFD8DC;
+  padding: 10px 5px;
+  font-size: 25px;
+}
+
+h3 {
   font-weight: 400;
-  font-size: 30px;
-}
-
-.logo {
-  max-width: 100px;
-}
-
-.enter {
- background-color: #FFC107;
- margin-top: 40px;
- width: 90%;
- border: 0px;
- height: 35px;
- color: #FFFFFF;
- font-weight: 800;
- font-size: 18px;
-
-
-}
-
-.enter:hover {
-  background-color: #FFD773;
+  color: #687D8D;
+  border-bottom: 1px solid #CFD8DC;
+  padding: 15px 5px;
+  margin: 5px;
+  font-size: 20px;
 }
 
 .bookmarks {
@@ -70,7 +56,10 @@ body {
   border: 0;
   border-bottom: 1px solid #F2F4F4;
   padding: 5px;
+}
 
+.delete {
+  color: #455A64;
 }
 
 .delete {
@@ -78,6 +67,55 @@ body {
   position: ;
   bottom: 0px;
   margin-right: 5px;
+}
+
+.delete .website-url:hover {
+  color: #455A64;
+}
+
+.display {
+  background-color: #455A64;
+  width: 50%;
+  height: 720px;
+  text-align: center;
+}
+
+.enter {
+  background-color: #FFC107;
+  margin-top: 40px;
+  width: 90%;
+  border: 0px;
+  height: 35px;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.enter:hover {
+  background-color: #FFD773;
+}
+
+.inputs {
+  display: block;
+  width: 90%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 35px;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+
+
+
+
+.read {
+  color: #455A64;
 }
 
 .read {
@@ -94,42 +132,4 @@ body {
 
 .website-url {
   color: #607D8B;
-}
-
-.read {
-  color: #455A64;
-}
-
-.read .delete .website-url:hover {
-  color: #455A64;
-}
-
-.delete {
-  color: #455A64;
-}
-
-h1 {
-  color: #FFFFFF;
-  margin-top: 200px;
-  margin-bottom: 20px;
-  font-weight: 800;
-  font-size: 80px;
-}
-
-h2 {
-  font-weight: 800;
-  color: #455A64;
-  margin: 5px;
-  border-bottom: 1px solid #CFD8DC;
-  padding: 10px 5px;
-  font-size: 25px;
-}
-
-h3 {
-  font-weight: 400;
-  color: #687D8D;
-  border-bottom: 1px solid #CFD8DC;
-  padding: 15px 5px;
-  margin: 5px;
-  font-size: 20px;
 }
