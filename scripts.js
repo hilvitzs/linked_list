@@ -7,12 +7,16 @@ var enterBtn = $('.enter');
 enterBtn.on('click', function(){
   var $userInput = $('.website-title-inputs').val();
   var $urlInput = $('.website-url-inputs').val();
-  $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
-'<h2>' + $userInput + '</h2>' +
- '<a href= "' + $urlInput + '">' + $urlInput + '</a>' +   //<a href="url">link text</a>
- '<button class="readbkm bookmark-button">Read</button >' +
- '<button class="deletebkm bookmark-button">Delete</button >' +
-'</section>');
+  if ($userInput === "") {
+    alert("Error, you did not enter anything!");
+  } else {
+      $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
+      '<h2>' + $userInput + '</h2>' +
+      '<a href= "' + $urlInput + '">' + $urlInput + '</a>' +
+      '<button class="readbkm bookmark-button">Read</button >' +
+      '<button class="deletebkm bookmark-button">Delete</button >' +
+      '</section>')
+}
 });
 
 //When the user clicks on the button for creating the bookmark, it should be added to the bookmarks section
@@ -26,13 +30,13 @@ $('.bookmarks').on('click', '.readbkm', function(){
   $(this).parent().toggleClass('read');
 });
 
-$('.bookmarks').on('click', '.deletebkm', function(){
-  $(this).parent().remove('.bookmark-temp');
-});
 
 //When the user clicks on the “Remove” button, the link should be removed from the page
 
 
+$('.bookmarks').on('click', '.deletebkm', function(){
+  $(this).parent().remove('.bookmark-temp');
+});
 
 
 //PHASE TWO
