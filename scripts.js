@@ -7,7 +7,7 @@ var enterBtn = $('.enter');
 enterBtn.on('click', function(){
   var $userInput = $('.website-title-inputs').val();
   var $urlInput = $('.website-url-inputs').val();
-  $('.bookmarks').prepend('<section class="bookmark-temp second-bookmark">' +
+  $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
 '<h2>' + $userInput + '</h2>' +
  '<h3>' + $urlInput + '</h3>' +
  '<button class="read bookmark-button">Read</button >' +
