@@ -9,9 +9,9 @@ enterBtn.on('click', function(){
   var $urlInput = $('.website-url-inputs').val();
   $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
 '<h2>' + $userInput + '</h2>' +
- '<h3>' + $urlInput + '</h3>' +
+ '<a href= "' + $urlInput + '">' + $urlInput + '</a>' +   //<a href="url">link text</a>
  '<button class="readbkm bookmark-button">Read</button >' +
- '<button class="delete bookmark-button">Delete</button >' +
+ '<button class="deletebkm bookmark-button">Delete</button >' +
 '</section>');
 });
 
@@ -24,7 +24,11 @@ enterBtn.on('click', function(){
 
 $('.bookmarks').on('click', '.readbkm', function(){
   $(this).parent().toggleClass('read');
-})
+});
+
+$('.bookmarks').on('click', '.deletebkm', function(){
+  $(this).parent().remove('.bookmark-temp');
+});
 
 //When the user clicks on the “Remove” button, the link should be removed from the page
 
