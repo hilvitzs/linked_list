@@ -17,9 +17,11 @@ body {
 h1 {
   color: #FFFFFF;
   font-weight: 800;
-  font-size: 83px;
+  font-size: 80px;
+  display: inline;
   margin-top: 200px;
   margin-bottom: 20px;
+  width: 90%;
 }
 
 h2 {
@@ -40,7 +42,7 @@ a:hover {
   background-color: #CFD8DC;
   display: flex;
   flex-direction: column;
-  height: 720px;
+  height: 730px;
   justify-content: space-between;
   overflow: scroll;
   width: 50%;
@@ -116,7 +118,7 @@ a:hover {
 
 .display {
   background-color: #455A64;
-  height: 720px;
+  height: 730px;
   width: 50%;
   text-align: center;
 }
@@ -154,6 +156,7 @@ a:hover {
 .logo {
   margin: 0px 10px;
   max-width: 115px;
+  display: inline-block;
 }
 
 .read {
@@ -177,4 +180,51 @@ background-color: #F2F4F4;
 .title {
   color: white;
   display: inline-block;
+}
+
+.titleText {
+  display: inline-block;
+  width: 90%;
+  margin: 200px auto 0px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media screen and (max-width: 1036px) {
+  h1 {
+    font-size: 58px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    display: block;
+  }
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 40px;
+  }
+
+  .list {
+    margin-top: 5px;
+  }
+
+  .bookmarks {
+    width: 100%;
+  }
+
+  .display {
+    width: 100%;
+  }
+
+  .logo {
+    max-width: 50px;
+  }
+
+  .inputs {
+    font-size: 20px;
+  }
+
 }
