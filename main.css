@@ -46,22 +46,6 @@ h4 {
   font-size: 10px;
 }
 
-.unr-display {
-  position: absolute;
-  float: left;
-  top: 65px;
-  left: 103px;
-  font-size: 10px;
-}
-
-.rd-display {
-  position: absolute;
-  float: left;
-  top: 65px;
-  left: 188px;
-  font-size: 10px;
-}
-
 .bookmarks {
   background-color: #CFD8DC;
   display: flex;
@@ -183,6 +167,14 @@ h4 {
   display: inline-block;
 }
 
+.rd-display {
+  position: absolute;
+  float: left;
+  top: 65px;
+  left: 188px;
+  font-size: 10px;
+}
+
 .read {
 background-color: #F2F4F4;
 }
@@ -214,6 +206,13 @@ background-color: #F2F4F4;
   margin-right: auto;
 }
 
+.unr-display {
+  position: absolute;
+  float: left;
+  top: 65px;
+  left: 103px;
+  font-size: 10px;
+}
 
 @media screen and (max-width: 1036px) {
   h1 {
