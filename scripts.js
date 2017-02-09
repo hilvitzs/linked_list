@@ -10,7 +10,7 @@ enterBtn.on('click', function(){
   if ($userInput === "") {
     alert("Error, you did not enter anything!");
   } else {
-      $('.bookmarks').prepend('<section class="bookmark-temp first-bookmark">' +
+      $('.bookmarks').prepend('<section class="bookmark-temp">' +
       '<h2>' + $userInput + '</h2>' +
       '<a href= "' + $urlInput + '">' + $urlInput + '</a>' +
       '<button class="readbkm bookmark-button">Read</button >' +

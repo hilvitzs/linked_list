@@ -122,13 +122,16 @@ a:hover {
 .readbkm  {
   color: #455A64;
   margin-left: 5px;
+  background-color: #F2F4F4;
 }
 
 .read {
-  color: black;
-  font-weight: 800;
+  background-color: black;
 }
 
+.read .readbkm {
+  color: magenta;
+}
 
 .title {
   color: white;
