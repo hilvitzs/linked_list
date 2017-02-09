@@ -34,8 +34,32 @@ h2 {
   padding: 10px 5px;
 }
 
-a:hover {
-  /*text-decoration: none;*/
+h4 {
+  color: #FFFFFF;
+}
+
+.bkm-display {
+  position: absolute;
+  float: left;
+  top: 65px;
+  left: 14px;
+  font-size: 10px;
+}
+
+.unr-display {
+  position: absolute;
+  float: left;
+  top: 65px;
+  left: 103px;
+  font-size: 10px;
+}
+
+.rd-display {
+  position: absolute;
+  float: left;
+  top: 65px;
+  left: 188px;
+  font-size: 10px;
 }
 
 .bookmarks {
@@ -138,8 +162,8 @@ a:hover {
   background-color: #FFD773;
 }
 
-.enter:hover {
-  background-color: #FFD773;
+.enter:disabled {
+  background-color: lightgrey;
 }
 
 .inputs {
@@ -213,6 +237,7 @@ background-color: #F2F4F4;
 
   .display {
     width: 100%;
+    height: 580px;
   }
 
   .inputs {

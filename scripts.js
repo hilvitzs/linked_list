@@ -35,8 +35,6 @@ $('.bookmarks').on('click', '.readbkm', function(){
   var unRead = bmCount - bmRead;
   $('.bm-read-Counter').text(bmRead);
   $('.bm-unread').text(unRead);
-
-
 });
 
 
@@ -48,30 +46,12 @@ $('.bookmarks').on('click', '.deletebkm', function(){
 });
 
 
-//PHASE TWO
-//If the user omits the title or the URL, the application should not create the link and should instead display an error.
-
-
-
-//CSS The application should be resposive and work equally well on desktop and mobile. (Flexbox is your friend here.)
-
-
-
-//PHASE THREE
-//The button for creating links should be disabled if there are no contents in the title or URL fields.
-
-
-//The application should be able to keep count of the total number of links currently on the page.
-
-
-
-//The application should be able to keep count of the total number of read and unread links currently on the page.
-
-
-
-//PHASE FOUR: The Project Strikes Back
-//Add a “Clear Read Bookmarks” button which clears all the read bookmarks when clicked.
-
-
-
-//The user should not to be able to add a URL that isn’t valid.
+$('.inputs').on('keyup', function() {
+ var $userInput = $('.website-title').val();
+ var $urlInput = $('.website-url').val();
+ if ($userInput === "" || $urlInput === "") {
+   $('.enter').prop("disabled", true);
+ } else {
+   $('.enter').prop("disabled", false);
+ }
+});
