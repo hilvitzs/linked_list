@@ -39,11 +39,11 @@ h4 {
 }
 
 .bkm-display {
-  position: absolute;
   float: left;
-  top: 65px;
-  left: 14px;
   font-size: 10px;
+  left: 14px;
+  position: absolute;
+  top: 65px;
 }
 
 .bookmarks {
@@ -63,6 +63,9 @@ h4 {
   margin: auto;
   padding: 0px 10px 10px 10px;
   width: 90%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .bookmark-button {
@@ -168,11 +171,11 @@ h4 {
 }
 
 .rd-display {
-  position: absolute;
   float: left;
-  top: 65px;
-  left: 188px;
   font-size: 10px;
+  left: 188px;
+  position: absolute;
+  top: 65px;
 }
 
 .read {
@@ -207,11 +210,11 @@ background-color: #F2F4F4;
 }
 
 .unr-display {
-  position: absolute;
   float: left;
-  top: 65px;
-  left: 103px;
   font-size: 10px;
+  left: 103px;
+  position: absolute;
+  top: 65px;
 }
 
 @media screen and (max-width: 1036px) {
