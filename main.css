@@ -9,7 +9,7 @@ h1 {
   margin-top: 200px;
   margin-bottom: 20px;
   font-weight: 800;
-  font-size: 80px;
+  font-size: 83px;
 }
 
 h2 {
@@ -19,58 +19,65 @@ h2 {
   border-bottom: 1px solid #CFD8DC;
   padding: 10px 5px;
   font-size: 25px;
+  display: block;
 }
 
-h3 {
+a {
   font-weight: 400;
   color: #687D8D;
   border-bottom: 1px solid #CFD8DC;
-  padding: 15px 5px;
+  padding: 20px 5px;
   margin: 5px;
   font-size: 20px;
+  display: block;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .bookmarks {
   background-color: #CFD8DC;
   width: 50%;
+  height: 720px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 }
 
 .bookmark-temp {
   border: 2px solid #607D8B;
-  height: 140px;
+  height: 160px;
   width: 90%;
   margin: auto;
   background-color: #FFFFFF;
+  padding: 0px 10px 10px 10px;
 }
 
 .bookmark-button {
   display: inline-block;
-  width: 50px;
   position: relative;
   width: 50px;
   float: left;
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #F2F4F4;
-  padding: 5px;
+  padding: 2px;
+  margin-top: 10px;
+  font-size: 16px;
 }
 
-.delete {
-  color: #455A64;
+.bookmark-button:hover {
+  border-bottom: 1px solid #FFC107;
 }
 
 .deletebkm {
-  float: right;
-  position: ;
   bottom: 0px;
-  margin-right: 5px;
-}
-
-.delete .website-url:hover {
   color: #455A64;
+  float: right;
+  margin-right: 5px;
+  width: 60px;
 }
 
 .display {
@@ -82,10 +89,10 @@ h3 {
 
 .enter {
   background-color: #FFC107;
-  margin-top: 40px;
-  width: 90%;
+  margin-top: 50px;
+  width: 91%;
   border: 0px;
-  height: 35px;
+  height: 40px;
   color: #FFFFFF;
   font-weight: 800;
   font-size: 18px;
@@ -107,29 +114,23 @@ h3 {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 115px;
+  margin: 0px 10px;
 }
 
-
-
-
-
-.read {
+.readbkm  {
   color: #455A64;
-}
-
-.read {
-  float: left;
-  bottom: 0px;
   margin-left: 5px;
 }
+
+.read {
+  color: #F05A28;
+  font-weight: 800;
+}
+
 
 .title {
   color: white;
   display: inline-block;
 
-}
-
-.website-url {
-  color: #607D8B;
 }
