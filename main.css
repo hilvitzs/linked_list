@@ -32,10 +32,6 @@ a {
   display: block;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 .bookmarks {
   background-color: #CFD8DC;
   width: 50%;
@@ -103,6 +99,10 @@ a:hover {
   background-color: #FFD773;
 }
 
+.enter:disabled {
+  background-color: #D3D3D3;
+}
+
 .inputs {
   display: block;
   width: 90%;
@@ -122,19 +122,22 @@ a:hover {
 .readbkm  {
   color: #455A64;
   margin-left: 5px;
-  background-color: #F2F4F4;
 }
 
 .read {
-  background-color: black;
+  background-color: #F2F4F4;
 }
 
 .read .readbkm {
-  color: magenta;
+  color: #F05A28;
 }
 
 .title {
   color: white;
   display: inline-block;
+}
+
+
+@media screen and (max-width: 300px) {
 
 }

@@ -3,11 +3,15 @@
 
 
 var enterBtn = $('.enter');
+var $userInput;
+var $urlInput;
+
+
 
 enterBtn.on('click', function(){
   var $userInput = $('.website-title').val();
   var $urlInput = $('.website-url').val();
-  if ($userInput === "") {
+  if ($userInput === "" || $urlInput === "") {
     alert("Error, you did not enter anything!");
   } else {
       $('.bookmarks').prepend('<section class="bookmark-temp">' +
@@ -19,8 +23,8 @@ enterBtn.on('click', function(){
 }
 });
 
-//When the user clicks on the button for creating the bookmark, it should be added to the bookmarks section
 
+//When the user clicks on the button for creating the bookmark, it should be added to the bookmarks section
 
 
 //When the user clicks on the “Mark as Read” button:A class of .read should be added to the bookmark If it already has the class of .read, it should be removed
@@ -50,7 +54,15 @@ $('.bookmarks').on('click', '.deletebkm', function(){
 //PHASE THREE
 //The button for creating links should be disabled if there are no contents in the title or URL fields.
 
+$('inputs').keyup(function() {
+  if ($('inputs').val() === "") {
+    enterBtn.disabled = true;
+  } else {
+    enterBtn.disabled = false;
+  }
+})
 
+console.log($userInput);
 
 //The application should be able to keep count of the total number of links currently on the page.
 
