@@ -30,7 +30,10 @@ a {
   margin: 5px;
   font-size: 20px;
   display: block;
-  text-decoration-color: #F2F4F4;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .bookmarks {
@@ -65,11 +68,16 @@ a {
   font-size: 16px;
 }
 
+.bookmark-button:hover {
+  border-bottom: 1px solid #FFC107;
+}
+
 .deletebkm {
   bottom: 0px;
   color: #455A64;
   float: right;
   margin-right: 5px;
+  width: 60px;
 }
 
 .display {
