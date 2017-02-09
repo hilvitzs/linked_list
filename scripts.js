@@ -5,8 +5,8 @@
 var enterBtn = $('.enter');
 
 enterBtn.on('click', function(){
-  var $userInput = $('.website-title-inputs').val();
-  var $urlInput = $('.website-url-inputs').val();
+  var $userInput = $('.website-title').val();
+  var $urlInput = $('.website-url').val();
   if ($userInput === "") {
     alert("Error, you did not enter anything!");
   } else {
@@ -20,7 +20,6 @@ enterBtn.on('click', function(){
 });
 
 //When the user clicks on the button for creating the bookmark, it should be added to the bookmarks section
-
 
 
 
