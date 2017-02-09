@@ -207,10 +207,6 @@ background-color: #F2F4F4;
     font-size: 40px;
   }
 
-  .list {
-    margin-top: 5px;
-  }
-
   .bookmarks {
     width: 100%;
   }
@@ -219,12 +215,15 @@ background-color: #F2F4F4;
     width: 100%;
   }
 
-  .logo {
-    max-width: 50px;
-  }
-
   .inputs {
     font-size: 20px;
   }
 
+  .list {
+    margin-top: 5px;
+  }
+
+  .logo {
+    max-width: 50px;
+  }
 }
