@@ -30,10 +30,11 @@ a {
   margin: 5px;
   font-size: 20px;
   display: block;
+  /*text-decoration: none;*/
 }
 
 a:hover {
-  text-decoration: underline;
+  /*text-decoration: none;*/
 }
 
 .bookmarks {
@@ -103,6 +104,10 @@ a:hover {
   background-color: #FFD773;
 }
 
+.enter:hover {
+  background-color: #FFD773;
+}
+
 .inputs {
   display: block;
   width: 90%;
@@ -122,15 +127,19 @@ a:hover {
 .readbkm  {
   color: #455A64;
   margin-left: 5px;
-  background-color: #F2F4F4;
+  background-color: transparent;
+  border: 0px;
+  border-bottom: 1px solid #F2F4F4;
 }
 
 .read {
-  background-color: black;
+background-color: #F2F4F4;
 }
 
 .read .readbkm {
-  color: magenta;
+  color: #F05A28;
+  font-weight: 800;
+  background-color: transparent;
 }
 
 .title {
