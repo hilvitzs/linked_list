@@ -5,9 +5,7 @@ enterBtn.on('click', function(){
   var $userInput = $('.website-title').val();
   var $urlInput = $('.website-url').val();
   if ($userInput === "" || $urlInput === "") {
-
-
-    alert("Error, you did not enter anything!");
+      alert("Error, you did not enter anything!");
   } else {
       $('.bookmarks').prepend('<section class="bookmark-temp">' +
       '<h2>' + $userInput + '</h2>' +
